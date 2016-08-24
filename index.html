@@ -44,13 +44,21 @@
 								Usuarios<span class="caret"></span>
 							</a>
 							<ul class="dropdown-menu" role="menu">
-								<li><a href="http://54.172.57.48:8765/WebEmpleados/">Empleados</a></li>
+								<li><a target="_blank" href="http://54.172.57.48:8765/WebEmpleados/">Empleados</a></li>
 								<li><a href="#">Proveedores</a></li>
 								<li class="divider"></li>
 								<li><a href="descargas.html">Descargas</a></li>
 							</ul>
 						</li>
-						<li><a href="#">Tecnología</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+								Estándares<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#">Tecnología</a></li>
+								<li><a target="_blank" href="http://www.apics.com.mx">APICS</a></li>
+							</ul>
+						</li>
 						<li><a href="#">Contacto</a></li>
 					</ul>
 				</div>
@@ -73,15 +81,16 @@
 		</ol>	
 		<div class="col-sm-2 col-md-3"></div>
 		<div class="col-sm-8 col-md-6">
-			<div id="carrusel-1" class="carousel slide" data-ride="carousel">
+			<div id="carrusel" class="carousel slide" data-ride="carousel">
 				<!-- Indicadores -->
 				<ol class="carousel-indicators">
-					<li data-target="#carrusel-1" data-slide-to="0" class="active"></li>
-					<li data-target="#carrusel-1" data-slide-to="1"></li>
-					<li data-target="#carrusel-1" data-slide-to="2"></li>
-					<li data-target="#carrusel-1" data-slide-to="3"></li>
-					<li data-target="#carrusel-1" data-slide-to="4"></li>
-					<li data-target="#carrusel-1" data-slide-to="5"></li>
+					<li data-target="#carrusel" data-slide-to="0" class="active"></li>
+					<li data-target="#carrusel" data-slide-to="1"></li>
+					<li data-target="#carrusel" data-slide-to="2"></li>
+					<li data-target="#carrusel" data-slide-to="3"></li>
+					<li data-target="#carrusel" data-slide-to="4"></li>
+					<li data-target="#carrusel" data-slide-to="5"></li>
+					<li data-target="#carrusel" data-slide-to="6"></li>
 				</ol>
 				<!-- Contenedor de los slide -->
 				<div class="carousel-inner" role="listbox">
@@ -111,12 +120,18 @@
 						<img src="images/it.jpg" class="img-resonsive">
 							<h4>Tecnología</h4>
 					</div>
+					<div class="item">
+						<a target="_blank" href="http://apics.com.mx/">
+							<img src="images/apics.jpg" class="img-resonsive">
+							<h4>APICS</h4>
+						</a>
+					</div>
 					<!-- Controles -->
-					<a href="#carrusel-1" class="left carousel-control" role="button" data-slide="prev">
+					<a href="#carrusel" class="left carousel-control" role="button" data-slide="prev">
 						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
 						<span class="sr-only">Anterior</span>
 					</a>
-					<a href="#carrusel-1" class="right carousel-control" role="button" data-slide="next">
+					<a href="#carrusel" class="right carousel-control" role="button" data-slide="next">
 						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 						<span class="sr-only">Siguiente</span>
 					</a>
