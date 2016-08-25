@@ -10,20 +10,21 @@
 	padding: 10px 0px 0px 0px;
 }
 
+.imagen {
+	margin: 0px 0px 0px 15px;
+	padding: 0px;
+}
+
 @media (min-width: 768px) {
 	#img-internet {
 		background: url('../images/internet.jpg') no-repeat;
 		width: 600px;
 		height: 280px;
-		margin: 10px 0px 0px 10px;
-		padding: 0px;		
 	}	
 	#img-3capas {
 		background: url('../images/3capas.jpg') no-repeat;
 		width: 360px;
 		height: 120px;
-		margin: 10px 0px 0px 10px;
-		padding: 0px;		
 	}
 }
 
@@ -32,15 +33,11 @@
 		background: url('../images/internet-sm.jpg') no-repeat;
 		width: 351px;
 		height: 108px;
-		margin: 10px 0px 0px 10px;
-		padding: 0px;		
 	}	
 	#img-3capas {
 		background: url('../images/3capas-sm.jpg') no-repeat;
 		width: 300px;
 		height: 100px;
-		margin: 10px 0px 0px 10px;
-		padding: 0px;		
 	}
 }
 
