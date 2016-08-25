@@ -9,5 +9,10 @@
 }
 
 .carousel-indicators {
+	bottom: 20px;
 	background-color: #abc;
+}
+
+h4 {
+	margin-top: 30px;
 }
