@@ -1,2 +1,1 @@
-
-w3IncludeHTML();
+w3IncludeHTML(); // Incluye los snippets que tenga referenciados cada html
