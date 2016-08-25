@@ -15,12 +15,7 @@
 	</header>
 	
 	<section class="jumbotron">
-		<div class="container">
-			<h1>Software Arex</h1>
-			<p>
-				¡Soluciones transaccionales para la nube que sí funcionan!
-			</p>
-		</div>
+		<div w3-include-html="softwareArex.html"></div>
 	</section>
 
 	<section class="main container">
@@ -28,9 +23,9 @@
 			<li><a href="index.html">Home</a></li>
 			<li class="active">Descargas</li>
 		</ol>
-		<h3>Sólo para equipos con sistema operativo Windows<span class="glyphicon glyphicon-copyright-mark"></span></h3>
+		<h3>Sólo para equipos con sistema operativo Windows</h3>
 		<p>
-			Este software se requiere para ejecutar la interfase GUI, la cual opera sólo en equipos con sistema operativo Windows <span class="glyphicon glyphicon-copyright-mark"></span>, en cualquier versión, ya sea de 32 ó 64 bits, excepto VISTA.
+			Este software se requiere para ejecutar la interfase GUI, la cual opera sólo en equipos con sistema operativo Windows, en cualquier versión, ya sea de 32 ó 64 bits, excepto VISTA.
 		</p>
 		<p>
 			Descargue el software cliente que corresponda con su aplicación. Si no está seguro, verifique con su representante Arex o con el administrador del sistema en su organización.
@@ -43,6 +38,7 @@
 			<li><a href="http://www.arexti.com/ArexWebSLv10.exe">Software genérico v.10</a></li>
 			<li><a href="http://www.arexti.com/ArexSFv11.exe">Software genérico Statefree v.11</a></li>
 			<li><a href="http://www.arexti.com/ArexICSLv11.exe">Software personalizado para CMIC/ICIC/FIC/ITC v.11</a></li>
+			<li><a href="http://www.arexti.com/ov11.exe">Evaluación de Orientación Vocacional v.11</a></li>
 		</ul>
 		<p>
 			Debe ejecutar el instalador que se descarga con derechos de Administrador.
@@ -53,16 +49,13 @@
 	</section>
 	
 	<footer>
-		<hr>
-		<div class="container">
-			<a href="#"><span class="glyphicon glyphicon-chevron-up"></span></a>
-			<div class="pull-right">
-				<p><span class="glyphicon glyphicon-copyright-mark"></span> Arex Tecnología de Información, S.A. de C.V.</p>
-			</div>
-		</div>
+		<div w3-include-html="footer.html"></div>
 	</footer>
 
+	<script src="js/w3data.js"></script>
 	<script src="js/jquery.min.js"></script>	
 	<script src="js/bootstrap.min.js"></script>	
+	<script>w3IncludeHTML();</script>
+
 </body>
 </html>
