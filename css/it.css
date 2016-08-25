@@ -10,6 +10,10 @@
 	padding: 10px 0px 0px 0px;
 }
 
+.panel-title {
+	color: #000;
+}
+
 .imagen {
 	margin: 0px 0px 0px 20px;
 	padding: 0px;
