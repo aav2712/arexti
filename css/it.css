@@ -1,3 +1,7 @@
+.contenido {
+	color: #000;
+}
+
 @media (min-width: 768px) {
 	#img-internet {
 		background: url('../images/internet.jpg') no-repeat;
