@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
+
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/styles.css">
+
+	<title>Software Arex</title>
+</head>
+<body>
+
+	<header id="header">
+		<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navegacion">
+						<span class="sr-only">Desplegar / Ocultar menú</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="#" class="navbar-brand">Sitio Web Empleados</a>
+				</div>
+				<!-- Inicia Menú -->
+				<div class="collapse navbar-collapse" id="navegacion">
+					<ul class="nav navbar-nav">
+						<li class="dropdown">
+							<a 	href="#" 
+								class="dropdown-toggle" 
+								data-toggle="dropdown" 
+								role="button" 
+								id="mNombre">[Inicie sesión]<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#perfil">Perfil...</a></li>
+								<li class="divider"></li>
+								<li><a href="/">Salir</a></li>
+							</ul>
+						</li>
+						<li>
+							<a id="mLogin" href="#ventana1" data-toggle="modal">Iniciar sesión</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<section class="jumbotron">
+		<div w3-include-html="../softwareArex.html"></div>
+	</section>
+	
+	<main>
+		<div class="container">
+			
+		<form class="form-horizontal">
+			<div class="form-group">
+				<div class="row">
+					<label class="control-label col-sm-2" for="ejercicio">Año:</label>
+					<div class="col-sm-2 col-xm-10">
+						<input class="form-control" type="text" id="ejercicio">
+					</div>
+				</div>
+			</div>
+		</form>		
+		</div>
+	</main>
+
+	<footer>
+		<div w3-include-html="../footer.html"></div>
+	</footer>
+
+	<div class="modal fade" id="ventana1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<a id="btnLoginCierra" href="/" type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</a>
+					<h4 class="modal-title">Inicie sesión</h4>
+				</div> <!-- modal-header -->
+				<div class="modal-body">
+					<form class="form-horizontal">
+						<div class="form-group">
+							<div class="row">
+								<label class="control-label col-sm-2" for="cveEmpresa">Empresa:</label>
+								<div class="col-sm-6">
+									<input class="form-control" type="text" id="cveEmpresa">
+								</div>
+							</div>
+							<div class="row">
+								<br>
+								<label class="control-label col-sm-2" for="cveEmpleado">Empleado:</label>
+								<div class="col-sm-6">
+									<input class="form-control" type="text" id="cveEmpleado">
+								</div>
+							</div>
+							<div class="row">
+								<br>
+								<label class="control-label col-sm-2" for="contrasena">Contraseña:</label>
+								<div class="col-sm-6">
+									<input class="form-control" type="password" id="contrasena">
+								</div>
+							</div>
+						</div>
+					</form>
+				</div> <!-- modal-body -->
+				<div class="modal-footer">
+					<button id="btnLogin" type="submit" class="btn btn-primary">Entrar</button>
+				</div>
+			</div>
+		</div>	
+	</div>
+
+	<script src="../js/jquery.min.js"></script>	
+	<script src="../js/bootstrap.min.js"></script>	
+	<script src="../js/w3data.js"></script>
+	<script src="js/script.js"></script>
+	
+</body>
+</html>
