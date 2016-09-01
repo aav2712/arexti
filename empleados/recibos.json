@@ -1,0 +1,41 @@
+[
+	{
+		"resultado":"0",
+		"texto":"Todo Ok"
+	},
+	{
+		"recibo":"0010.2014.001-000004.001.023.008.1",
+		"nomina":"Nómina semanal",
+		"periodo":"Semana 1",
+		"depto":"Compras",
+		"puesto":"Comprador"
+	},
+	{
+		"recibo":"0010.2014.002-000004.001.023.008.1",
+		"nomina":"Nómina semanal",
+		"periodo":"Semana 2",
+		"depto":"Compras",
+		"puesto":"Comprador"
+	},
+	{
+		"recibo":"0010.2014.003-000004.001.023.008.1",
+		"nomina":"Nómina semanal",
+		"periodo":"Semana 3",
+		"depto":"Compras",
+		"puesto":"Comprador"
+	},
+	{
+		"recibo":"0010.2014.004-000004.001.023.008.1",
+		"nomina":"Nómina semanal",
+		"periodo":"Semana 4",
+		"depto":"Compras",
+		"puesto":"Comprador"
+	},
+	{
+		"recibo":"0030.2014.001-000004.001.023.008.1",
+		"nomina":"Vales de despensa",
+		"periodo":"Enero",
+		"depto":"Compras",
+		"puesto":"Comprador"
+	}
+]

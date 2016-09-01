@@ -52,21 +52,29 @@
 		<div w3-include-html="../softwareArex.html"></div>
 	</section>
 	
-	<main>
-		<div class="container">
-			
-		<form class="form-horizontal">
-			<div class="form-group">
-				<div class="row">
-					<label class="control-label col-sm-2" for="ejercicio">Año:</label>
-					<div class="col-sm-2 col-xm-10">
-						<input class="form-control" type="text" id="ejercicio">
-					</div>
-				</div>
-			</div>
-		</form>		
+	<div class="container">
+
+		<p id="mensajeEmpresa"  class="bg-warning"></p>
+		<p id="mensajeEmpleado" class="bg-info"></p>
+
+		<div class="btn-group">
+			<button id="actual" class="btn btn-default dropdown-toggle"
+			        data-toggle="dropdown">
+				Actual
+				<span class="caret"></span>
+			</button>
+				<ul class="dropdown-menu"
+				    role="menu">
+					<li><a id="actual-0" href="#">-1</a></li>
+					<li><a id="actual-1" href="#">-2</a></li>
+					<li><a id="actual-2" href="#">-3</a></li>
+					<li><a id="actual-3" href="#">-4</a></li>
+					<li><a id="actual-4" href="#">-5</a></li>
+				</ul>
 		</div>
-	</main>
+
+		<div class="contenido"></div>
+	</container>
 
 	<footer>
 		<div w3-include-html="../footer.html"></div>

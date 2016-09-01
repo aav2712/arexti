@@ -2,5 +2,7 @@
 	"resultado":"0",
 	"texto":"Todo Ok",
 	"sessionId":"12345678901234567890",
-	"nombre":"Tales de Mileto Rodríguez"
+	"nombre":"Tales de Mileto Rodríguez",
+	"mensajeEmpresa":"Muy queridos colaboradores, se les recuerda que el evento de fin de año será en donde siempre.",
+	"mensajeEmpleado":"Fulanito de tal, favor de pasar a RH a actualizar tus documentos."
 }
