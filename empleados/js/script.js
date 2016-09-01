@@ -67,11 +67,12 @@ $().ready(function(){
 				$(".contenido").html(recibosHtml);
 				for (var i=1;i<respuesta.length;i++) {
 					var renglon='<tr>'
-					           +'<td>' + respuesta[i].nomina  + '</td>'
-					           +'<td>' + respuesta[i].periodo + '</td>'
-					           +'<td>' + respuesta[i].depto   + '</td>'
-					           +'<td>' + respuesta[i].puesto  + '</td>'
-					           +'<td><a class="enviar"  recibo="' + respuesta[i].recibo + '" href="#"><img src="../images/eMail.jpg" width="30" height="30"></a></td>' 
+					           +'<td>' + respuesta[i].nomina    + '</td>'
+					           +'<td>' + respuesta[i].periodo   + '</td>'
+					           +'<td>' + respuesta[i].depto     + '</td>'
+					           +'<td>' + respuesta[i].puesto    + '</td>'
+					           +'<td>' + respuesta[i].descargas + '</td>'
+					           +'<td><a class="enviar" recibo="' + respuesta[i].recibo + '" href="#"><img src="../images/eMail.jpg" width="30" height="30"></a></td>' 
 							   +'</tr>';
 					$(".table").append(renglon);
 				};
