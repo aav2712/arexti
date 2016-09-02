@@ -34,13 +34,14 @@
 								id="mNombre">[Inicie sesión]<span class="caret"></span>
 							</a>
 							<ul class="dropdown-menu" role="menu">
-								<li><a href="#perfil">Perfil...</a></li>
+								<li><a id="mMail" href="#modalMail" data-toggle="modal">Actualizar eMail...</a></li>
+								<li><a id="mContrasena" href="#modalContrasena" data-toggle="modal">Modificar contraseña...</a></li>
 								<li class="divider"></li>
 								<li><a href="/">Salir</a></li>
 							</ul>
 						</li>
 						<li>
-							<a id="mLogin" href="#ventana1" data-toggle="modal">Iniciar sesión</a>
+							<a id="mLogin" href="#modalLogin" data-toggle="modal">Iniciar sesión</a>
 						</li>
 					</ul>
 				</div>
@@ -49,7 +50,15 @@
 	</header>
 
 	<section class="jumbotron">
-		<div w3-include-html="../softwareArex.html"></div>
+		<div class="container">
+			<h1 id="empresa">Software Arex<small><sup><span class="glyphicon glyphicon-copyright-mark"></span></sup></small></h1>
+			<a href="/">
+				<div class="pull-left" id="logoLineas"></div>
+			</a>
+			<p>
+				¡Soluciones transaccionales para la nube que sí funcionan!
+			</p>
+		</div>
 	</section>
 	
 	<div class="container">
@@ -80,7 +89,7 @@
 		<div w3-include-html="../footer.html"></div>
 	</footer>
 
-	<div class="modal fade" id="ventana1">
+	<div class="modal fade" id="modalLogin">
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
@@ -118,6 +127,76 @@
 				</div> <!-- modal-body -->
 				<div class="modal-footer">
 					<button id="btnLogin" type="submit" class="btn btn-primary">Entrar</button>
+				</div>
+			</div>
+		</div>	
+	</div>
+
+	<div class="modal fade" id="modalMail">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<a id="btnMailCierra" href="/" type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</a>
+					<h4 class="modal-title">Actualice su dirección de correo</h4>
+				</div> <!-- modal-header -->
+				<div class="modal-body">
+					<form class="form-horizontal">
+						<div class="form-group">
+							<div class="row">
+								<div class="col-xs-1"></div>
+								<label class="control-label col-sm-2" for="eMail">eMail:</label>
+								<div class="col-sm-6">
+									<input class="form-control" type="text" id="eMail">
+								</div>
+							</div>
+						</div>
+					</form>
+				</div> <!-- modal-body -->
+				<div class="modal-footer">
+					<button id="btnMail" type="submit" class="btn btn-primary">Actualizar</button>
+				</div>
+			</div>
+		</div>	
+	</div>
+
+	<div class="modal fade" id="modalContrasena">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<a id="btnContrasenaCierra" href="/" type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</a>
+					<h4 class="modal-title">Modifique su contraseña</h4>
+				</div> <!-- modal-header -->
+				<div class="modal-body">
+					<form class="form-horizontal">
+						<div class="form-group">
+							<div class="row">
+								<div class="col-xs-1"></div>
+								<label class="control-label col-sm-4" for="contrasenaAnterior">Contraseña anterior:</label>
+								<div class="col-sm-6">
+									<input class="form-control" type="password" id="contrasenaAnterior">
+								</div>
+							</div>
+							<br>
+							<div class="row">
+								<div class="col-xs-1"></div>
+								<label class="control-label col-sm-4" for="nuevaContrasena">Nueva contraseña:</label>
+								<div class="col-sm-6">
+									<input class="form-control" type="password" id="nuevaContrasena">
+								</div>
+							</div>
+							<br>
+							<div class="row">
+								<div class="col-xs-1"></div>
+								<label class="control-label col-sm-4" for="repotaContrasena">Repita contraseña:</label>
+								<div class="col-sm-6">
+									<input class="form-control" type="password" id="repitaContrasena">
+								</div>
+							</div>
+						</div>
+					</form>
+				</div> <!-- modal-body -->
+				<div class="modal-footer">
+					<button id="btnContrasena" type="submit" class="btn btn-primary">Actualizar</button>
 				</div>
 			</div>
 		</div>	
