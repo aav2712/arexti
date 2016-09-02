@@ -30,31 +30,31 @@ $().ready(function(){
 			$("#mNombre").html(respuesta.nombre + '<span class="caret"></span>');
 			$("#btnLoginCierra").click();
 			$("#actual-0").click();
-			$("#actual").focus();
+			$("#actual").focus().select();
 		}).error(function(e){
 			alert("Servicio no disponible. Inténtelo más tarde\n(" + e.status + ": " + e.statusText + ")");
 		});
 	});
 
 	$("#actual-0").click(function(){
-		$("#actual").html(this.text + ' <span class="caret"></span>');
-		leeRecibos(this.text);
+		$("#actual").html($("#actual-0").html() + ' <span class="caret"></span>');
+		leeRecibos($("#actual-0").html());
 	});
 	$("#actual-1").click(function(){
-		$("#actual").html(this.text + ' <span class="caret"></span>');
-		leeRecibos(this.text);
+		$("#actual").html($("#actual-1").html() + ' <span class="caret"></span>');
+		leeRecibos($("#actual-1").html());
 	});
 	$("#actual-2").click(function(){
-		$("#actual").html(this.text + ' <span class="caret"></span>');
-		leeRecibos(this.text);
+		$("#actual").html($("#actual-2").html() + ' <span class="caret"></span>');
+		leeRecibos($("#actual-2").html());
 	});
 	$("#actual-3").click(function(){
-		$("#actual").html(this.text + ' <span class="caret"></span>');
-		leeRecibos(this.text);
+		$("#actual").html($("#actual-3").html() + ' <span class="caret"></span>');
+		leeRecibos($("#actual-3").html());
 	});
 	$("#actual-4").click(function(){
-		$("#actual").html(this.text + ' <span class="caret"></span>');
-		leeRecibos(this.text);
+		$("#actual").html($("#actual-0").html() + ' <span class="caret"></span>');
+		leeRecibos($("#actual-4").html());
 	});
 
 	$("#mMail").click(function(){
@@ -127,13 +127,13 @@ function leeRecibos(ejercicio) {
 			}
 			$(".contenido").html(recibosHtml);
 			for (var i=1;i<respuesta.length;i++) {
-				var renglon='<tr>'
+				var renglon='<tr onclick="enviar(' + "'" + respuesta[i].recibo + "'" + ')">'
 				           +'<td>' + respuesta[i].nomina    + '</td>'
 				           +'<td>' + respuesta[i].periodo   + '</td>'
 				           +'<td>' + respuesta[i].depto     + '</td>'
 				           +'<td>' + respuesta[i].puesto    + '</td>'
 				           +'<td>' + respuesta[i].descargas + '</td>'
-				           +'<td><img src="../images/eMail.jpg" width="30" height="30" onclick="enviar(' + "'" + respuesta[i].recibo + "'" + ')"></td>' 
+				           +'<td><img src="../images/eMail.jpg" width="30" height="30"></td>' 
 						   +'</tr>';
 				$(".table").append(renglon);
 			};
@@ -154,6 +154,7 @@ function enviar(cual) {
 			return false;
 		};
 		alert("Recibo enviado a su correo.");
+		leeRecibos($("#actual").text());
 	}).error(function(e){
 		alert("Servicio no disponible. Inténtelo más tarde\n(" + e.status + ": " + e.statusText + ")");			
 	});
