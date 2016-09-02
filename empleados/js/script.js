@@ -159,4 +159,3 @@ function enviar(cual) {
 		alert("Servicio no disponible. Inténtelo más tarde\n(" + e.status + ": " + e.statusText + ")");			
 	});
 };
-
