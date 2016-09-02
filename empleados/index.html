@@ -5,8 +5,10 @@
 	<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
 
 	<link rel="stylesheet" href="../css/bootstrap.min.css">
-	<link rel="stylesheet" href="../css/styles.css">
+	<link rel="stylesheet" href="css/styles.css">
 
+	<link href="../images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+	
 	<title>Software Arex</title>
 </head>
 <body>
@@ -31,18 +33,17 @@
 								class="dropdown-toggle" 
 								data-toggle="dropdown" 
 								role="button" 
-								id="mNombre">[Inicie sesión]<span class="caret"></span>
+								id="mPerfil">Perfil<span class="caret"></span>
 							</a>
 							<ul class="dropdown-menu" role="menu">
 								<li><a id="mMail" href="#modalMail" data-toggle="modal">Actualizar eMail...</a></li>
 								<li><a id="mContrasena" href="#modalContrasena" data-toggle="modal">Modificar contraseña...</a></li>
-								<li class="divider"></li>
-								<li><a href="/">Salir</a></li>
 							</ul>
 						</li>
 						<li>
 							<a id="mLogin" href="#modalLogin" data-toggle="modal">Iniciar sesión</a>
 						</li>
+						<li><a href="/">Salir</a></li>
 					</ul>
 				</div>
 			</div>
@@ -51,13 +52,9 @@
 
 	<section class="jumbotron">
 		<div class="container">
-			<h1 id="empresa">Software Arex<small><sup><span class="glyphicon glyphicon-copyright-mark"></span></sup></small></h1>
-			<a href="/">
-				<div class="pull-left" id="logoLineas"></div>
-			</a>
-			<p>
-				¡Soluciones transaccionales para la nube que sí funcionan!
-			</p>
+			<h2 id="empleado">Software Arex<small><sup><span class="glyphicon glyphicon-copyright-mark"></span></sup></small></h2>
+			<div class="pull-left" id="logoLineas"></div>
+			<h3 id="empresa">¡Soluciones transaccionales para la nube que sí funcionan!</h3>
 		</div>
 	</section>
 	
@@ -67,18 +64,19 @@
 		<p id="mensajeEmpleado" class="bg-info"></p>
 
 		<div class="btn-group">
-			<button id="actual" class="btn btn-default dropdown-toggle"
+			<button id="actual" 
+				    class="btn btn-default dropdown-toggle"
 			        data-toggle="dropdown">
 				Actual
 				<span class="caret"></span>
 			</button>
 				<ul class="dropdown-menu"
 				    role="menu">
-					<li><p id="actual-0">-1</p></li>
-					<li><p id="actual-1">-2</p></li>
-					<li><p id="actual-2">-3</p></li>
-					<li><p id="actual-3">-4</p></li>
-					<li><p id="actual-4">-5</p></li>
+					<li style="cursor:pointer" id="actual-0">-1</li>
+					<li style="cursor:pointer" id="actual-1">-2</li>
+					<li style="cursor:pointer" id="actual-2">-3</li>
+					<li style="cursor:pointer" id="actual-3">-4</li>
+					<li style="cursor:pointer" id="actual-4">-5</li>
 				</ul>
 		</div>
 

@@ -1,0 +1,51 @@
+.navbar {
+	margin-bottom: 0px;
+}
+
+.jumbotron {
+	background: #007;
+	color: #fff;
+	padding: 10px 0px;
+}
+
+@media (min-width: 992px) {
+	#logoLineas {
+		background: url('../../images/logoLineas.png') no-repeat;
+		width: 100px;
+		height: 89px;
+	}
+	#empleado {
+		font-size: 60px;
+	}
+	#empresa {
+		font-size: 48px;
+	}	
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	#logoLineas {
+		background: url('../../images/logoLineas-sm.png') no-repeat;
+		width: 75px;
+		height: 67px;
+	}
+	#empleado {
+		font-size: 48px;
+	}
+	#empresa {
+		font-size: 36px;
+	}
+}
+
+@media (max-width: 767px) {
+	#logoLineas {
+		background: url('../../images/logoLineas-xs.png') no-repeat;
+		width: 50px;
+		height: 45px;
+	}
+	#empleado {
+		font-size: 7vw;
+	}
+	#empresa {
+		font-size: 5vw;
+	}
+}
